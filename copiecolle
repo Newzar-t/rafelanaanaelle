@@ -1,0 +1,28 @@
+background-color: #F5E4D7;
+    color:#5c463b;
+
+    Soleil Regular
+font-family: "soleil", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Soleil Bold
+font-family: "soleil", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+<div class="aboutme">
+            <h1>About me</h1>
+            <p>Hi, I'm a front end developer in being, based in Paris. Currently student at Gobelins, I'm training to master programmation and webdesign. If you are interested by hire a motivated and curious person, contact me !</p>
+        </div>
+
+        <div class="aboutme">
+            
+            <p>I want to create web experiences that stands out. To mark people spirit, to inspire and to color the world. Programmation is a way where I can express myself and conceive my idea, I want to make internet  brighter !</p>
+        </div>
+
+        <path class="cls-1" d="M.07,454.06c682.67,96,1395.56-40.39,1278.22-307.56C1157.88-127.66,602.74,12.14,711.18,335.03c104.89,312.31,535.11,460.37,1084.44,460.37,787.56,0,1048.89-330.67,1048.89-330.67"/>
+
+        setInterval(() => {
+            BubbleMaker();
+           },2000);

@@ -1,0 +1,320 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:16px;
+    max-width:100vw;
+    overflow-x: hidden;
+    min-height:100vh;
+    background-color: #F5E4D7;
+    font-family: "soleil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#5c463b;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+nav{
+    position:fixed;
+    top:1rem;
+    left:1rem;
+    width:50%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration:none;
+    color:#5c463b;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover{
+    transform:translateY(-0.2rem) scale(1.15);
+}
+
+nav a.active
+{
+    border-bottom: #5c463b 2px solid;
+}
+
+/* Accueil */
+
+#accueil{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.title{
+    font-weight: 700;
+    font-size:10rem;
+    -webkit-text-stroke: rgba(107, 43, 0, 0.048) 2px;
+    color:#F5E4D7;
+}
+
+.btn
+{
+    z-index:10;
+    height:fit-content;
+    width:auto;
+    padding:0.8rem 1rem;
+    font-size:1rem;
+    font-weight: 600;
+    color: #F5E4D7;
+    background-color: #5c463b;
+    border-radius:40px;
+    border-style: none;
+    transition:transform 0.3s ease-in-out;
+    animation: apparition 1s ease-in-out forwards;
+}
+
+.btn:hover{
+  transform:scale3d(1.15,1.15,1);
+}
+
+.space-between
+{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    
+}
+
+.informations
+{
+    width:100%;
+    position:absolute;
+    bottom:0;
+    display:flex;
+    justify-content: space-around;
+    align-items:end;
+    animation : comingFromBelow 1s ease-in-out forwards;
+}
+
+@keyframes apparition
+{
+    0%
+    {
+        background-color:transparent;
+    }
+    100%
+    {
+        background-color: #5c463b;
+    }
+}
+
+@keyframes comingFromBelow
+{
+    0%
+    {
+        transform:translateY(100%);
+    }
+    100%
+    {
+        transform:translateY(0);
+    }
+}
+
+/* Travaux */
+
+#travaux{
+    width:78%;
+    height:100%;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.work-title
+{
+    width:20%;
+    display:block;
+    margin:0 auto;
+}
+.work-grid
+{
+  display:flex;
+  width:70%;
+  display:block;
+}
+
+.work-element
+{
+    width:100%;
+    display:block;
+    padding:0.7rem 2rem 0.7rem ;
+    height: fit-content;
+    border-bottom:#5c463b 2px solid;
+    transition: transform 0.3s ease-in-out;
+}
+
+.work-element:hover{
+    transform: scale(1.05);
+    border-bottom:#5c463b 5px solid;
+
+}
+
+.work-element-image
+{
+    position:fixed;
+    z-index:1;
+    width:210px;
+    height:210px;
+    pointer-events: none;
+}
+
+.work-element-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+/* My vision */
+
+#apropos
+{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#apropos div{
+    max-width:40ch;
+}
+
+.aboutme{
+  display:block;
+}
+
+.aboutme h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #5c463b;
+    margin-bottom: 1rem;
+}
+
+.aboutme-title{
+    width:fit-content;
+    position:static;
+    font-weight: 700;
+    font-size:100px;
+    color: #5c463b6c;
+    animation: bouncingText 1s alternate infinite ease-in-out;
+    transition: transform 0.3s ease-out;
+}
+
+@keyframes bouncingText
+{
+    0%
+    {
+        translate: 0 0;    }
+    100%
+    {
+        translate : 0 0.4rem;
+    }
+}
+
+/* contact */
+
+#contact
+{
+    width:100%;
+    height:100%;
+    display:block;
+    justify-content:center;
+    align-items:end;
+}
+.contact-title
+{
+    width:100%;
+    height:70%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.contact-title h1
+{
+    font-size:5rem;
+    text-align: center;
+}
+
+.contact-title span{
+    width:45%;
+    margin:3% auto 3% auto;
+    display:flex;
+    justify-content:space-between;
+}
+
+.contact-title p
+{
+    text-align: center;
+    max-width:100ch;
+}
+
+#bubble-main
+{
+    position:relative;
+    width:100%;
+    height:30%;
+    display:flex;
+    align-items: end;
+}
+
+.bubble{
+    z-index:1;
+    width:fit-content;
+    animation:  bubblePop 1.6s ease-in-out infinite;
+    transition: transform 1.6s ease-in-out;
+}
+
+@keyframes bubblePop
+{
+    0%
+    {
+      opacity:1;
+      transform:translateY(0);
+      display:block;
+    }
+    100%
+    {
+      transform:translateY(-10rem);
+      opacity:0;
+      display:none;
+    }
+}
+
+footer{
+    width:100%;
+    height:12rem;
+    background: #5c463b;
+    color:#F5E4D7;
+    display:block;
+    justify-items: center;
+    align-content: center;
+}
+
+footer h3{
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+
+footer a{
+    font-size:2rem;
+    margin: 0 10px 0 10px;
+    color:#F5E4D7;
+}
