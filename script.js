@@ -93,7 +93,7 @@ let works = [
     {
         title : "Modeling and animating a 3D scene",    
         description : "Creation of a 3D scene using Blender",
-        image : "Images - blender/zedezdze.png",
+        image : "Images - blender/zedezdze.webp",
         link : "blender.html",
     },
 

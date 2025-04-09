@@ -3,13 +3,13 @@ let productions = [
         name : "Booklet",
         description : "I created a booklet for an association supporting children with disabilities and/or illnesses, working directly with the president of Luce&All. She provided the text, images, and key elements she wanted included. I then designed the booklet in Figma based on her brief, while adding some of my own creative ideas.",
         logiciel : "Figma",
-        images : ["Images - PepeStudio/pagederriere.webp","Images - PepeStudio/unnamed.webp"],
+        images : ["Images - PepeStudio/pagederriere.webp","Images - PepeStudio/pageavantprincipaleversionfinale.webp","Images - PepeStudio/unnamed.webp"],
     },
     {
         name : "Interface design",
         description : "For an emailing project, I designed a new interface for the company's website, based on its visual identity. I used Figma and really enjoyed imagining how the layout and components would look. I also used free assets from Freepik for illustrations.",
         logiciel : "Figma",
-        images : ["Images - PepeStudio/tytytty.webp","Images - PepeStudio/gfsfese.webp"],
+        images : ["Images - PepeStudio/ikykyukyu.webp","Images - PepeStudio/tytytty.webp","Images - PepeStudio/gfsfese.webp"],
     },
     {
         name : "Web Integration",
