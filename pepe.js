@@ -3,25 +3,25 @@ let productions = [
         name : "Booklet",
         description : "I created a booklet for an association supporting children with disabilities and/or illnesses, working directly with the president of Luce&All. She provided the text, images, and key elements she wanted included. I then designed the booklet in Figma based on her brief, while adding some of my own creative ideas.",
         logiciel : "Figma",
-        images : ["Images - PepeStudio/pagederriere.jpg","Images - PepeStudio/pageavantprincipaleversionfinale.jpg","Images - PepeStudio/unnamed.jpg"],
+        images : ["Images - PepeStudio/pagederriere.webp","Images - PepeStudio/unnamed.webp"],
     },
     {
         name : "Interface design",
         description : "For an emailing project, I designed a new interface for the company's website, based on its visual identity. I used Figma and really enjoyed imagining how the layout and components would look. I also used free assets from Freepik for illustrations.",
         logiciel : "Figma",
-        images : ["Images - PepeStudio/ikykyukyu.png","Images - PepeStudio/tytytty.png","Images - PepeStudio/gfsfese.png"],
+        images : ["Images - PepeStudio/tytytty.webp","Images - PepeStudio/gfsfese.webp"],
     },
     {
         name : "Web Integration",
         description : "To help maintain the website, I quickly learned how to do web integration. I contributed by adding text, banners, and other elements to the site, and publishing updates online.",
         logiciel : "Webflow",
-        images : ["Images - PepeStudio/integrationwebflowblog.png","Images - PepeStudio/integrationwebflowbanner.png","Images - PepeStudio/integrationwebflowavis.png"],
+        images : ["Images - PepeStudio/integrationwebflowblog.webp","Images - PepeStudio/integrationwebflowbanner.webp","Images - PepeStudio/integrationwebflowavis.webp"],
     },
     {
         name : "Graphic design",
         description : "I also created content for social media, especially for LinkedIn, following the company’s graphic guidelines. Additionally, I designed several banners using Photoshop.",
         logiciel : "Canva, Photoshop",
-        images : ["Images - PepeStudio/trtrtrt.png","Images - PepeStudio/yjtyjtyjt.jpeg","Images - PepeStudio/yutyutyu.png"],
+        images : ["Images - PepeStudio/trtrtrt.webp","Images - PepeStudio/yjtyjtyjt.webp","Images - PepeStudio/yutyutyu.png"],
     }
     
 
@@ -33,7 +33,7 @@ const gridcontainer = document.createElement("div");
 gridcontainer.classList.add("work-display");
 container.appendChild(gridcontainer);
 
-let urlSpan = "Images - mkfr/jsjsjsfks.jpg";
+let urlSpan = " ";
 
 function ProjectGrid(project)
 {
