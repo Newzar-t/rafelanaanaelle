@@ -17,6 +17,13 @@ html{
     scroll-behavior: smooth;
 }
 
+@media (max-width : 750px)
+{
+    html{
+        font-size:12px;
+    }
+
+}
 /* Navbar */
 
 nav{
@@ -31,6 +38,9 @@ nav a{
     text-decoration:none;
     color:#5c463b;
     transition: transform 0.3s ease-in-out;
+    background-color: #b6866e62;
+    padding:0.5rem 0.7rem;
+    border-radius: 20px;
 }
 
 nav a:hover{
@@ -89,7 +99,6 @@ main, .work{
 {
     height:fit-content;
     text-align: center;
-    
     width:30ch;
     padding:0.8rem 1rem;
     font-size:1rem;

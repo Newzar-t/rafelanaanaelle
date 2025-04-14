@@ -17,14 +17,26 @@ html{
     scroll-behavior: smooth;
 }
 
+@media (max-width : 750px)
+{
+    html{
+        font-size:12px;
+    }
+
+}
+
 /* Navbar */
 
-nav{
-    position:fixed;
+header{
+    position:sticky;
     top:1rem;
     left:1rem;
-    width:50%;
-    display:flex;
+    width:100%;
+    height:fit-content;
+}
+
+nav{
+   display:flex;
     justify-content: space-evenly;
 }
 
@@ -42,6 +54,16 @@ nav a.active
 {
     border-bottom: #5c463b 2px solid;
 }
+
+@media (max-width : 750px)
+{
+    header{
+        background-color: #d3a68f62;
+    }
+}
+
+
+
 
 /* Accueil */
 
@@ -91,6 +113,7 @@ nav a.active
 
 .informations
 {
+    height:fit-content;
     width:100%;
     position:absolute;
     bottom:0;
@@ -124,6 +147,25 @@ nav a.active
     }
 }
 
+@media (max-width : 750px)
+{
+    .title{
+        font-size:5rem;
+        color:#5c463b;
+    }
+    .btn
+    {
+        width:fit-content;
+        margin:0 auto;
+    }
+    .informations
+    {
+        justify-content:space-between;
+        width:90%;
+        margin:auto;
+    }
+}
+
 /* Travaux */
 
 #travaux{
@@ -135,7 +177,7 @@ nav a.active
     align-items: center;
 }
 
-.work-title
+#work-title
 {
     width:20%;
     display:block;
@@ -178,6 +220,28 @@ nav a.active
     height:100%;
     object-fit:cover;
     border-radius:50%;
+}
+
+@media (max-width : 750px)
+{
+    #travaux{
+        margin:1rem auto 2rem auto;
+        width:100%;
+        height:fit-content;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    #work-title
+    {
+        width:100%;
+        margin: 0.5rem auto 0.5rem auto;
+        height:fit-content;
+        display:flex;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 /* My vision */
@@ -224,6 +288,28 @@ nav a.active
     100%
     {
         translate : 0 0.4rem;
+    }
+}
+
+@media (max-width : 750px)
+{
+
+    #apropos
+    {
+        height:fit-content;
+        width:100%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-items:center;
+        align-content:start;
+    }
+    #apropos div{
+        padding:0.8rem;
+        max-width:50ch;
+    }
+    .aboutme-title
+    {
+        display:none;
     }
 }
 
@@ -282,6 +368,39 @@ nav a.active
     transition: transform 1.6s ease-in-out;
 }
 
+@media (max-width : 750px)
+{
+    #contact
+    {
+        height:70%;
+    }
+
+
+    .contact-title
+    {
+       width:100%;
+    }
+
+    .contact-title span{
+        width:100%;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        margin:3% 1% 3% 1%;
+    }
+        
+
+    .contact-title h1
+    {
+        font-size:3rem;
+    }
+    .contact-title p
+{
+    margin:0.5rem 0.5rem;
+    text-align: left;
+    max-width:55ch;
+}
+}
+
 @keyframes bubblePop
 {
     0%
@@ -317,4 +436,11 @@ footer a{
     font-size:2rem;
     margin: 0 10px 0 10px;
     color:#F5E4D7;
+}
+
+@media (max-width : 750px)
+{
+    footer h2{
+        text-align:center;
+    }
 }

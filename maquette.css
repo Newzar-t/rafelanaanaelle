@@ -17,6 +17,13 @@ html{
     scroll-behavior: smooth;
 }
 
+@media (max-width : 750px)
+{
+    html{
+        font-size:12px;
+    }
+}
+
 /* Navbar */
 
 nav{
@@ -41,6 +48,7 @@ nav a.active
 {
     border-bottom: #5c463b 2px solid;
 }
+
 
 /* main */
 
