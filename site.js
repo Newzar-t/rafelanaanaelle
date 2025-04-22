@@ -1,6 +1,13 @@
 let sites = 
 [
     {
+        name : "Bento!!",
+        description : `A fictional website about Japanese culture and travel in Tokyo.
+To improve my skills in React.js, I recently designed and developed a website called Bento!!. It allows users to easily discover activities, events, restaurants, and hotels to plan a trip to Tokyo and its surroundings! `,
+        previewImage : ["Images/bentoboxvisual.png","Images/bentolandingpag.png"],
+        link:"https://newzar-t.github.io/bento_japan/",
+    },
+    {
         name : "Current Portfolio",
         description : "My newest portfolio : After receiving advices about interactivity and design, I remade a portfolio designed to be interactive, simple and a little fun to depict my personnality ! ",
         previewImage : ["Images/portfolioworks.png","Images/portfoliomyvision.png"],
