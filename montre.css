@@ -118,3 +118,20 @@ footer a{
     margin: 0 10px 0 10px;
     color:#F5E4D7;
 }
+
+@media (max-width : 750px)
+{
+    body
+{
+    padding : 0rem 1rem 0rem 1rem;
+}
+
+h1
+{
+    text-align: center;
+}
+
+    footer h2{
+        text-align:center;
+    }
+}

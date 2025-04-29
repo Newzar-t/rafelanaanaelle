@@ -154,3 +154,26 @@ footer a{
     margin: 0 10px 0 10px;
     color:#F5E4D7;
 }
+
+@media (max-width : 750px)
+{
+    body
+{
+    padding : 0rem 1rem 0rem 1rem;
+}
+
+h1
+{
+    text-align: center;
+}
+.grid
+{
+width:100%;
+display:grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows:1fr 1fr;
+}
+    footer h2{
+        text-align:center;
+    }
+}
